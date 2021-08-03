@@ -1,65 +1,66 @@
-# Ubuntu20.10ÅäÖÃgit»·¾³
+# Ubuntu20.10é…ç½®gitç¯å¢ƒ
 
-±êÇ©£¨¿Õ¸ñ·Ö¸ô£©£º git »·¾³ÅäÖÃ Ubuntu
+æ ‡ç­¾ï¼ˆç©ºæ ¼åˆ†éš”ï¼‰ï¼š git ç¯å¢ƒé…ç½® Ubuntu
 
 ---
-GitÊÇÒ»¸ö¿ªÔ´µÄ·Ö²¼Ê½°æ±¾¿ØÖÆÏµÍ³£¬¿ÉÒÔÓĞĞ§¡¢¸ßËÙµØ´¦Àí´ÓºÜĞ¡µ½·Ç³£´óµÄÏîÄ¿°æ±¾¹ÜÀí¡£Ò²ÊÇLinus TorvaldsÎªÁË°ïÖú¹ÜÀíLinuxÄÚºË¿ª·¢¶ø¿ª·¢µÄÒ»¸ö¿ª·ÅÔ´ÂëµÄ°æ±¾¿ØÖÆÈí¼ş¡£
+Gitæ˜¯ä¸€ä¸ªå¼€æºçš„åˆ†å¸ƒå¼ç‰ˆæœ¬æ§åˆ¶ç³»ç»Ÿï¼Œå¯ä»¥æœ‰æ•ˆã€é«˜é€Ÿåœ°å¤„ç†ä»å¾ˆå°åˆ°éå¸¸å¤§çš„é¡¹ç›®ç‰ˆæœ¬ç®¡ç†ã€‚ä¹Ÿæ˜¯Linus Torvaldsä¸ºäº†å¸®åŠ©ç®¡ç†Linuxå†…æ ¸å¼€å‘è€Œå¼€å‘çš„ä¸€ä¸ªå¼€æ”¾æºç çš„ç‰ˆæœ¬æ§åˆ¶è½¯ä»¶ã€‚
 
-## 1. ¸ü»»Èí¼şÔ´
+## 1. æ›´æ¢è½¯ä»¶æº
 
-## 2. °²×°git
+è¯·ç‚¹å‡»å‚è€ƒåœ°å€ï¼š[Ubuntuæ›´æ¢å®‰è£…æº](https://blog.csdn.net/daerzei/article/details/84873964)
+## 2. å®‰è£…git
 ```shell
 sudo apt-get install -y git
 ```
-## 3. ÅäÖÃgit
-- ÅäÖÃÓÃ»§ÃûºÍÓÊÏä
+## 3. é…ç½®git
+- é…ç½®ç”¨æˆ·åå’Œé‚®ç®±
 ```shell
-git config --global user.name "{username}"  //usernameÎªgithub×¢²áÓÃ»§Ãû
-git config --global user.email "{email}"    //emailÎªgithub×¢²á°ó¶¨ÓÊÏä
+git config --global user.name "{username}"  //usernameä¸ºgithubæ³¨å†Œç”¨æˆ·å
+git config --global user.email "{email}"    //emailä¸ºgithubæ³¨å†Œç»‘å®šé‚®ç®±
 ```
-- ²é¿´gitÅäÖÃ
+- æŸ¥çœ‹gité…ç½®
 ```shell
-git config --list  //²é¿´gitÅäÖÃ
+git config --list  //æŸ¥çœ‹gité…ç½®
 ```
-- ÅäÖÃSSH
+- é…ç½®SSH
 ```shell
 ssh-keygen -t rsa -C "{email}"
 ```
-- ²é¿´Éú³ÉÃØÔ¿
+- æŸ¥çœ‹ç”Ÿæˆç§˜é’¥
 ```shell
 cat ~/.ssh/id_rsa.pub
 ```
-- Github¹ÙÍøÅäÖÃSSH
+- Githubå®˜ç½‘é…ç½®SSH
 
-    ½øÈëGithubÖ÷Ò³²¢×ªµ½SettingsÒ³Ãæ£¬½øÈëºóµã»÷SSH and GPG Keys½øÈë×Ó½çÃæ²¢Ìí¼ÓĞÂµÄSSH Key
+    è¿›å…¥Githubä¸»é¡µå¹¶è½¬åˆ°Settingsé¡µé¢ï¼Œè¿›å…¥åç‚¹å‡»SSH and GPG Keysè¿›å…¥å­ç•Œé¢å¹¶æ·»åŠ æ–°çš„SSH Key
 
 ![file-list](https://raw.githubusercontent.com/qingfusheng/material/master/image/3.png)
 
 ![file-list](https://raw.githubusercontent.com/qingfusheng/material/master/image/2.png)
-## 4. gitµÄÊ¹ÓÃ
-### 1. git³£ÓÃÃüÁî
+## 4. gitçš„ä½¿ç”¨
+### 1. gitå¸¸ç”¨å‘½ä»¤
 ```git
-git remote add origin git@github.com:yeszao/dofiler.git # ÅäÖÃÔ¶³Ìgit°æ±¾¿â
-git pull origin master # ÏÂÔØ´úÂë¼°¿ìËÙºÏ²¢
-git push origin master # ÉÏ´«´úÂë¼°¿ìËÙºÏ²¢
-git fetch origin # ´ÓÔ¶³Ì¿â»ñÈ¡´úÂë
+git remote add origin git@github.com:yeszao/dofiler.git # é…ç½®è¿œç¨‹gitç‰ˆæœ¬åº“
+git pull origin master # ä¸‹è½½ä»£ç åŠå¿«é€Ÿåˆå¹¶
+git push origin master # ä¸Šä¼ ä»£ç åŠå¿«é€Ÿåˆå¹¶
+git fetch origin # ä»è¿œç¨‹åº“è·å–ä»£ç 
 
-git branch # ÏÔÊ¾ËùÓĞ·ÖÖ§
-git checkout master # ÇĞ»»µ½master·ÖÖ§
-git checkout -b dev # ´´½¨²¢ÇĞ»»µ½dev·ÖÖ§
-git commit -m "first version" # Ìá½»
+git branch # æ˜¾ç¤ºæ‰€æœ‰åˆ†æ”¯
+git checkout master # åˆ‡æ¢åˆ°masteråˆ†æ”¯
+git checkout -b dev # åˆ›å»ºå¹¶åˆ‡æ¢åˆ°devåˆ†æ”¯
+git commit -m "first version" # æäº¤
 
-git status # ²é¿´×´Ì¬
-git log # ²é¿´Ìá½»ÀúÊ·
+git status # æŸ¥çœ‹çŠ¶æ€
+git log # æŸ¥çœ‹æäº¤å†å²
 
-git config --global core.editor vim # ÉèÖÃÄ¬ÈÏ±à¼­Æ÷Îªvim£¨gitÄ¬ÈÏÓÃnano£©
-git config core.ignorecase false # ÉèÖÃ´óĞ¡Ğ´Ãô¸Ğ
-git config --global user.name "YOUR NAME" # ÉèÖÃÓÃ»§Ãû
-git config --global user.email "YOUR EMAIL ADDRESS" # ÉèÖÃÓÊÏä
+git config --global core.editor vim # è®¾ç½®é»˜è®¤ç¼–è¾‘å™¨ä¸ºvimï¼ˆgité»˜è®¤ç”¨nanoï¼‰
+git config core.ignorecase false # è®¾ç½®å¤§å°å†™æ•æ„Ÿ
+git config --global user.name "YOUR NAME" # è®¾ç½®ç”¨æˆ·å
+git config --global user.email "YOUR EMAIL ADDRESS" # è®¾ç½®é‚®ç®±
 
-git add <ÎÄ¼şÂ·¾¶>  # °ÑÖ¸¶¨µÄÎÄ¼şÌí¼Óµ½Ôİ´æÇøÖĞ
-git commit -m "<Ìá½»µÄÃèÊöĞÅÏ¢>"  # °ÑÔİ´æÇøÖĞµÄÎÄ¼şÌá½»µ½±¾µØ²Ö¿â£¬µ÷ÓÃÎÄ±¾±à¼­Æ÷ÊäÈë¸Ã´ÎÌá½»µÄÃèÊöĞÅÏ¢
-git pull origin master  # ´ÓÔ¶³Ì²Ö¿â»ñÈ¡×îĞÂ°æ±¾¡£
-git pull origin master  # °Ñ±¾µØ²Ö¿âµÄ·ÖÖ§ÍÆËÍµ½Ô¶³Ì²Ö¿âµÄÖ¸¶¨·ÖÖ§
+git add <æ–‡ä»¶è·¯å¾„>  # æŠŠæŒ‡å®šçš„æ–‡ä»¶æ·»åŠ åˆ°æš‚å­˜åŒºä¸­
+git commit -m "<æäº¤çš„æè¿°ä¿¡æ¯>"  # æŠŠæš‚å­˜åŒºä¸­çš„æ–‡ä»¶æäº¤åˆ°æœ¬åœ°ä»“åº“ï¼Œè°ƒç”¨æ–‡æœ¬ç¼–è¾‘å™¨è¾“å…¥è¯¥æ¬¡æäº¤çš„æè¿°ä¿¡æ¯
+git pull origin master  # ä»è¿œç¨‹ä»“åº“è·å–æœ€æ–°ç‰ˆæœ¬ã€‚
+git pull origin master  # æŠŠæœ¬åœ°ä»“åº“çš„åˆ†æ”¯æ¨é€åˆ°è¿œç¨‹ä»“åº“çš„æŒ‡å®šåˆ†æ”¯
 
 ```
